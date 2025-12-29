@@ -620,7 +620,7 @@ GRUB_CMDLINE_LINUX_DEFAULT="quiet acpi_backlight=vendor"
 5. **双显卡系统建议:**
    - 优先使用 AMD 集显作为主显示 (省电)
    - NVIDIA 独显用于计算任务 (CUDA)
-   - 参考本目录下的 [显卡混合模式配置指南.md](./显卡混合模式配置指南.md)
+   - 参考本目录下的 [gpu-hybrid-setup.md](./gpu-hybrid-setup.md)
 
 ---
 

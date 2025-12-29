@@ -1,0 +1,23 @@
+# Cloudflare Pages 配置文件
+# 用于 wrangler CLI 部署
+
+# 兼容性标志
+[compatibility_date]
+date = "2024-01-01"
+
+# 构建配置
+[build]
+command = "npm run docs:build"
+cwd = "."
+watch_paths = ["docs/**/*"]
+
+# 构建输出目录
+[build.output]
+directory = "docs/.vitepress/dist"
+
+# 环境变量
+[env.production]
+vars = { NODE_ENV = "production" }
+
+[env.preview]
+vars = { NODE_ENV = "development" }
